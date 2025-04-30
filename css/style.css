@@ -12,14 +12,25 @@ button {
     text-transform: uppercase;
     width: 200px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 #placeholder {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     padding: 50px;
     margin: 50px auto;
     border: 1px solid gray;
     border-radius: 10px;
-    font-size: 80px;
+    border-color: rgb(23, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice-image {
+    width: 200px;
+    height: 200px;
+    border-radius:10px;
 }
