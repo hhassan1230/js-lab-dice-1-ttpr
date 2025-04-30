@@ -13,7 +13,7 @@ let dice = {
 
 function printNumber(number) {
   let placeholder = document.getElementById("placeholder");
-  placeholder.innerHTML = '<img src= /img/dice-six-faces-' + numberLookup[number - 1] + '.png width = 150>';
+  placeholder.innerHTML = '<img src= img/dice-six-faces-' + numberLookup[number - 1] + '.png width = 150>';
 }
 
 const button = document.getElementById("button");
