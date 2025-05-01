@@ -14,10 +14,10 @@ button {
     cursor: pointer;
 }
 
-#placeholder {
-    height: 100px;
-    width: 100px;
-    padding: 50px;
+#diceFace {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
     margin: 50px auto;
     border: 1px solid gray;
     border-radius: 10px;
