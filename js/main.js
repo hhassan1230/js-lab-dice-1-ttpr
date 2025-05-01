@@ -1,30 +1,11 @@
-let dice = {
-  sides: 6,
-  roll: function () {
-
-  // Write Code Here
-  const randomNumber = getRandomIntInclusive(1, this.sides);
+// Attach an event listener to the button with id 'rollBtn'
+document.getElementById("rollBtn").addEventListener("click", function() {
+  // Generate a random number between 1 and 6
+  const diceNumber = Math.floor(Math.random() * 6) + 1; // Generates a number between 1 and 6
   
-   return (randomNumber);
-  }
-};
-
-function printNumber(number) {
-  let placeholder = document.getElementById("placeholder");
-  placeholder.innerHTML = number;
-}
-
-// Generate a random number between 1 and the number of sides and assign it to randomNumber
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-}
-
-
-const button = document.getElementById("button");
-
-button.onclick = function() {
-  let result = dice.roll();
-  printNumber(result);
-};
+  // Build the path to the image based on the random number
+  const diceImage = "img/dice" + diceNumber + ".png";  // Dynamically builds the image path
+  
+  // Set the src attribute of the image to the new dice image path
+  document.getElementById("dice").src = diceImage;  // This changes the dice image
+});
