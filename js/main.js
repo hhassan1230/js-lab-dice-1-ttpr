@@ -4,7 +4,7 @@ let dice = {
   let randomNumber;
   // Write Code Here
   // Generate a random number between 1 and the number of sides and assign it to randomNumber
-
+   randomNumber = Math.floor(Math.random()*this.sides) + 1;
    return (randomNumber);
   }
 };
