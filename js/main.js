@@ -1,17 +1,18 @@
 let dice = {
   sides: 6,
   roll: function () {
-  let randomNumber;
-  // Write Code Here
-  // Generate a random number between 1 and the number of sides and assign it to randomNumber
-
-   return (randomNumber);
+    return Math.floor(Math.random() * this.sides) + 1;
   }
 };
 
 function printNumber(number) {
   let placeholder = document.getElementById("placeholder");
   placeholder.innerHTML = number;
+
+  
+  const diceImage = document.getElementById("diceImage");
+  const words = ["one", "two", "three", "four", "five", "six"];
+  diceImage.src = `img/dice-six-faces-${words[number - 1]}.png`;
 }
 
 const button = document.getElementById("button");

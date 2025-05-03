@@ -1,17 +1,28 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Comic Sans MS', Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
+body {
+    background-color: #ffe6f0; 
+}
+
 button {
-    background-color: rgb(82, 186, 179);
-    border-radius: 6px;
+    background-color: #ff8ac9; 
+    border-radius: 12px;
     border: none;
-    color: rgb(255, 255, 255);
-    padding: 10px;
+    color: white;
+    padding: 12px;
     text-transform: uppercase;
     width: 200px;
     cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5cad; 
 }
 
 #placeholder {
@@ -19,7 +30,10 @@ button {
     width: 100px;
     padding: 50px;
     margin: 50px auto;
-    border: 1px solid gray;
-    border-radius: 10px;
+    border: 3px dashed #ffb6d9;
+    border-radius: 20px;
     font-size: 80px;
+    color: #ff69b4; 
+    background-color: #fff0f5; 
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
 }
