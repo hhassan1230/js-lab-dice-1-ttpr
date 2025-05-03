@@ -5,7 +5,7 @@ let dice = {
     // Write Code Here
     // Generate a random number between 1 and the number of sides and assign it to randomNumber
 
-    console.log(randomNumber);
+    // console.log(randomNumber);
     return randomNumber;
   },
 };
