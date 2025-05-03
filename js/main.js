@@ -1,12 +1,13 @@
 let dice = {
   sides: 6,
   roll: function () {
-  let randomNumber;
-  // Write Code Here
-  // Generate a random number between 1 and the number of sides and assign it to randomNumber
+    let randomNumber = Math.floor(Math.random() * 6 + 1);
+    // Write Code Here
+    // Generate a random number between 1 and the number of sides and assign it to randomNumber
 
-   return (randomNumber);
-  }
+    console.log(randomNumber);
+    return randomNumber;
+  },
 };
 
 function printNumber(number) {
@@ -16,7 +17,7 @@ function printNumber(number) {
 
 const button = document.getElementById("button");
 
-button.onclick = function() {
+button.onclick = function () {
   let result = dice.roll();
   printNumber(result);
 };
