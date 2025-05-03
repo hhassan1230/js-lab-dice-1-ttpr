@@ -4,6 +4,11 @@ let dice = {
   let randomNumber;
   // Write Code Here
   // Generate a random number between 1 and the number of sides and assign it to randomNumber
+const min = 1;
+const max = 6;
+ randomNumber = Math.floor(Math.random() * max) + min;
+console.log(randomNumber);
+
 
    return (randomNumber);
   }
