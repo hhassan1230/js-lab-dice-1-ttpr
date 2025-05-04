@@ -1,7 +1,8 @@
 let dice = {
   sides: 6,
   roll: function () {
-  let randomNumber;
+  // let randomNumber = Math.floor(Math.random() * 6) + 1;
+  let randomNumber = Math.floor(Math.random() * 6) + 1;
   // Write Code Here
   // Generate a random number between 1 and the number of sides and assign it to randomNumber
 
