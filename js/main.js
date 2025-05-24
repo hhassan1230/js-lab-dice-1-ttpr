@@ -10,27 +10,26 @@ let dice = {
 
 function printNumber(number) {
   let placeholder = document.getElementById("placeholder");
-  console.log(placeholder);
-  placeholder.innerHTML = number;
+  // placeholder.innerHTML = number;
   switch (number) {
-    case 1: {
+    case 1: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-one.png'>";
-    }
-    case 2: {
+    break;
+    case 2: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-two.png'>";
-    }
-    case 3: {
+    break;
+    case 3: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-three.png'>";
-    }
-    case 4: {
+    break;
+    case 4: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-four.png'>";
-    }
-    case 5: {
+    break;
+    case 5: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-five.png'>";
-    }
-    case 6: {
+    break;
+    case 6: 
       placeholder.innerHTML = "<img src='img/dice-six-faces-six.png'>";
-    }
+    break;
   }
 }
 
